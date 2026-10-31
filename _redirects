@@ -1,0 +1,6 @@
+# These three fixed Emailqu endpoints work on Netlify, including static Drop deploys.
+# No arbitrary host proxy. Query strings (cache busters) are passed upstream.
+/api/emailqu/domains                 https://emailqu.com/api/domains                 200
+/api/emailqu/random-username         https://emailqu.com/api/random-username         200
+/api/emailqu/public/emails/:address  https://emailqu.com/api/public/emails/:address  200
+/*                                  /index.html                                    200

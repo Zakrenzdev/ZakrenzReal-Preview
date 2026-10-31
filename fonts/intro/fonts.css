@@ -1,0 +1,36 @@
+/* Exact Google Fonts families and weights used by the reference. */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./caveat-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fleur De Leah';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fleur-de-leah-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./space-grotesk-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./space-grotesk-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./space-mono-400.ttf) format('truetype');
+}

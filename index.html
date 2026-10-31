@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Email action URLs are credentials; never send them as resource referrers.
+      if (location.pathname === "/auth/email-link" || new URLSearchParams(location.search).get("mode") === "signIn") {
+        var emailReferrer = document.createElement("meta");
+        emailReferrer.name = "referrer";
+        emailReferrer.content = "no-referrer";
+        document.head.appendChild(emailReferrer);
+      }
+    </script>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <meta name="theme-color" content="#080809" />
+    <meta name="color-scheme" content="light dark" />
+
+    <link rel="icon" href="/ZakrenzReal-Preview/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/ZakrenzReal-Preview/apple-touch-icon.png" />
+    <link rel="manifest" href="/ZakrenzReal-Preview/site.webmanifest" />
+
+    <!-- Tema diterapkan sebelum paint pertama supaya tidak ada kedipan putih/hitam. -->
+    <script>
+      (function () {
+        var dark = true;
+        try {
+          var saved = localStorage.getItem("zk-theme");
+          if (saved === "dark") dark = true;
+          else if (saved === "light") dark = false;
+          else if (window.matchMedia) dark = !window.matchMedia("(prefers-color-scheme: light)").matches;
+        } catch (e) {}
+        var bg = dark ? "#080809" : "#d3d4d8";
+        document.documentElement.style.backgroundColor = bg;
+        document.documentElement.style.colorScheme = dark ? "dark" : "light";
+      })();
+    </script>
+
+    <meta
+      name="description"
+      content="ZakrenzCode — Portfolio personal Zakrenz. Web Developer, Frontend Developer, Reverse Engineering, Security Research, dan pembuat berbagai project digital."
+    />
+
+    <meta
+      name="keywords"
+      content="Zakrenz, ZakrenzCode, Web Developer, Frontend Developer, React, Next.js, TypeScript, Reverse Engineering, Security Research, Indonesia"
+    />
+
+    <meta name="author" content="Zakrenz" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="ZakrenzCode — Creative Workbench" />
+    <meta
+      property="og:description"
+      content="Portfolio personal Zakrenz — Web Developer, Frontend Developer, Reverse Engineering, Security Research, dan berbagai project digital."
+    />
+    <meta property="og:site_name" content="ZakrenzCode" />
+    <!-- Ganti dengan URL absolut (https://domain-kamu.com/og.png) setelah deploy. -->
+    <meta property="og:image" content="https://zakrenzcode-atelier-v27.rightkrill9.chatgpt.site/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ZakrenzCode — developer, creator, dan modder dari Indonesia" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZakrenzCode — Creative Workbench" />
+    <meta
+      name="twitter:description"
+      content="Portfolio personal Zakrenz — Web Developer, Frontend Developer, Reverse Engineering, Security Research, dan berbagai project digital."
+    />
+    <meta name="twitter:image" content="https://zakrenzcode-atelier-v27.rightkrill9.chatgpt.site/og.png" />
+    <meta name="twitter:image:alt" content="ZakrenzCode — developer, creator, dan modder dari Indonesia" />
+
+    <link rel="stylesheet" href="/ZakrenzReal-Preview/fonts/intro/fonts.css" data-skp-fonts="/fonts/intro/fonts.css" />
+    <title>ZakrenzCode — Creative Workbench</title>
+
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #080809;
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zakrenz",
+        "alternateName": "ZakrenzCode",
+        "jobTitle": "Developer, Creator, Modder",
+        "description": "Developer, creator, dan modder dari Indonesia yang membangun tools, aplikasi, dan pengalaman digital.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Yogyakarta", "addressCountry": "ID" },
+        "knowsAbout": ["Web Development", "Frontend Engineering", "Prompt Engineering", "AI Engineering", "Networking"],
+        "sameAs": [
+          "https://github.com/zakrenzdev",
+          "https://t.me/zakrenz",
+          "https://www.tiktok.com/@zakrenzreal"
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/ZakrenzReal-Preview/assets/index-CEJV7wDk.js"></script>
+    <link rel="stylesheet" crossorigin href="/ZakrenzReal-Preview/assets/index-BwQ4JX0E.css">
+  </head>
+
+  <body>
+    <noscript>
+      JavaScript diperlukan untuk menjalankan website ZakrenzCode.
+    </noscript>
+
+    <div id="root"></div>
+
+  </body>
+</html>

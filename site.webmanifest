@@ -1,0 +1,13 @@
+{
+  "name": "ZakrenzCode — Developer Portfolio",
+  "short_name": "Zakrenz",
+  "description": "Portofolio Zakrenz — developer, creator, dan modder dari Indonesia.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#080809",
+  "theme_color": "#080809",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
